@@ -38,8 +38,8 @@ spec:
       targetPort: 8080
     -
       name: 'event-receiver'
-      port: 9006
-      targetPort: 9006
+      port: 13001
+      targetPort: 13001
 
   # label keys and values that must match in order to receive traffic for this service
   selector:
