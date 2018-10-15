@@ -62,7 +62,7 @@ public class SiddhiAppUtil {
         String publisherURL = "http://sp-ha-node-2:8080/testresults";
         //String publisherURL = "http://192.168.48.254:8080/testresults";
         String appbody = "@App:name('" + siddhiAppName + "')\n" +
-            "@source(type='http', receiver.url= 'http://192.168.48.26:9006/endpoints', "
+            "@source(type='http', receiver.url= 'http://sp-ha-node-1:9006/endpoints', "
             + "topic='symbol', @map(type='xml'))\n" +
             "define stream FooStream (symbol string, price float, class string);\n" +
             "@sink(type='http', publisher.url='" + publisherURL + "', method='{{method}}', " +
@@ -90,7 +90,7 @@ public class SiddhiAppUtil {
         String publisherURL = "http://sp-ha-node-2:8080/testresults";
         //String publisherURL = "http://192.168.48.254:8080/testresults";
         String appbody = "@App:name('" + siddhiAppName + "')\n" +
-            "@source(type='http', receiver.url= 'http://192.168.48.26:9006/endpoints', "
+            "@source(type='http', receiver.url= 'http://sp-ha-node-1:9006/endpoints', "
             + "topic='symbol', @map(type='xml'))\n" +
             "define stream FooStream (symbol string, price float, class string);\n" +
             "@sink(type='http', publisher.url='" + publisherURL + "', method='{{method}}', " +
@@ -118,7 +118,7 @@ public class SiddhiAppUtil {
         String publisherURL = "http://sp-ha-node-2:8080/testresults";
         //String publisherURL = "http://192.168.48.254:8080/testresults";
         String appbody = "@App:name('" + siddhiAppName + "')\n" +
-            "@source(type='http', receiver.url= 'http://192.168.48.254:9006/endpoints', "
+            "@source(type='http', receiver.url= 'http://sp-ha-node-1:9006/endpoints', "
             + "topic='symbol', @map(type='xml'))\n" +
             "define stream FooStream (symbol string, price float, class string);\n" +
             "@sink(type='http', publisher.url='" + publisherURL + "', method='{{method}}', " +
