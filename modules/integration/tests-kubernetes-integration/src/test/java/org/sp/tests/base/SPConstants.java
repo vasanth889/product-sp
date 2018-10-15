@@ -28,6 +28,9 @@ public class SPConstants {
     public static final String HA_NODE_2_POD_NAME = "sp-2";
     public static final String MYSQL_POD_NAME = "sp-mysql-db";
     public static final String MYSQL_PORT_NAME = "mysql-port";
+    public static final String HA_NODE_1_EVT_RVE_NAME = "evt-rcv";
+    public static final String HA_NODE_1_EVT_RVE_PORT = "event-receiver-port";
+    public static final String SP_PORT_NAME_1 = "event-receiver";
 /**public static final String POD_TAG_NAME_MYSQL = "mysql";
  # public static final String MYSQL_PORT_NAME = "mysql-port";
  */

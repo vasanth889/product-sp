@@ -36,6 +36,10 @@ spec:
       name: 'msf4j-http'
       port: 8080
       targetPort: 8080
+    -
+      name: 'event-receiver'
+      port: 9006
+      targetPort: 9006
 
   # label keys and values that must match in order to receive traffic for this service
   selector:

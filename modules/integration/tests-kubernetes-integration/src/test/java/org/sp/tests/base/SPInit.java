@@ -42,6 +42,8 @@ public class SPInit {
     public static String mysqlURL;
     public static String haNodeOneURL;
     public static String haNodeTwoURL;
+    public static String haNodeOneREURL;
+    public static String haNodeTwoREURL;
 
     protected HashMap<String, String> instanceMap;
 
@@ -73,9 +75,11 @@ public class SPInit {
                 } else if (url.getLabel().equals(instanceMap.get(SPConstants.HA_NODE_1_POD_NAME))) {
                     haNodeOneURL = getHTTPSUrl(SPConstants.SP_PORT_NAME, url.getHostIP(), url.getPorts(), "");
                     haNodeOneMsf4jURL = getHTTPSUrl(SPConstants.MSF4J_PORT_NAME, url.getHostIP(), url.getPorts(), "");
+                    haNodeOneREURL = getHTTPSUrl(SPConstants.SP_PORT_NAME_1, url.getHostIP(), url.getPorts(), "");
                 } else if (url.getLabel().equals(instanceMap.get(SPConstants.HA_NODE_2_POD_NAME))) {
                     haNodeTwoURL = getHTTPSUrl(SPConstants.SP_PORT_NAME, url.getHostIP(), url.getPorts(), "");
                     haNodeTwoMsf4jURL = getHTTPSUrl(SPConstants.MSF4J_PORT_NAME, url.getHostIP(), url.getPorts(), "");
+                    haNodeTwoREURL = getHTTPSUrl(SPConstants.SP_PORT_NAME_1, url.getHostIP(), url.getPorts(), "");
                 } else if (url.getLabel().equals(instanceMap.get(SPConstants.MYSQL_POD_NAME))) {
                     mysqlURL = getHTTPSUrl(SPConstants.MYSQL_PORT_NAME, url.getHostIP(), url.getPorts(), "");
                 }
