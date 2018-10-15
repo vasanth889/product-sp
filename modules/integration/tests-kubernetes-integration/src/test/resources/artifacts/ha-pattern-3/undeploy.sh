@@ -12,7 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-echo "Removing the K8S PODS!!!!!"
-kubectl delete rc,services,pods -l name="sp-mysql-db"
-kubectl delete rc,services,pods -l name="sp-ha-node-1"
-kubectl delete rc,services,pods -l name="sp-ha-node-2"
+#echo "Removing the K8S PODS!!!!!"
+#kubectl delete rc,services,pods -l name="sp-mysql-db"
+#kubectl delete rc,services,pods -l name="sp-ha-node-1"
+#kubectl delete rc,services,pods -l name="sp-ha-node-2"
