@@ -12,6 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#sp_port_two=32017
-#echo "Removing the HA Node 2"
-#kubectl delete rc,services,pods -l name="sp-ha-node-2"
+sp_port_two=32017
+echo "Removing the HA Node 2"
+kubectl delete rc,services,pods -l name="sp-ha-node-2"
