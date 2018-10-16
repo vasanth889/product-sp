@@ -61,7 +61,7 @@ public class SiddhiAppUtil {
 
         String publisherURL = "http://sp-ha-node-2:8080/testresults";
         //String publisherURL = "http://192.168.48.254:8080/testresults";
-        String receiverURL = "http://sp-ha-node-1:9006/endpoints";
+        String receiverURL = "http://sp-ha-node-1:13001/endpoints";
         String appbody = "@App:name('" + siddhiAppName + "')\n" +
             "@source(type='http', receiver.url= '" + receiverURL + "', "
             + "topic='symbol', @map(type='xml'))\n" +
@@ -90,7 +90,7 @@ public class SiddhiAppUtil {
 
         String publisherURL = "http://sp-ha-node-2:8080/testresults";
         //String publisherURL = "http://192.168.48.254:8080/testresults";
-        String receiverURL = "http://sp-ha-node-1:9006/endpoints";
+        String receiverURL = "http://sp-ha-node-1:13001/endpoints";
         String appbody = "@App:name('" + siddhiAppName + "')\n" +
             "@source(type='http', receiver.url= '" + receiverURL + "', "
             + "topic='symbol', @map(type='xml'))\n" +
@@ -119,7 +119,7 @@ public class SiddhiAppUtil {
 
         String publisherURL = "http://sp-ha-node-2:8080/testresults";
         //String publisherURL = "http://192.168.48.254:8080/testresults";
-        String receiverURL = "http://sp-ha-node-1:9006/endpoints";
+        String receiverURL = "http://sp-ha-node-2:13001/endpoints";
         String appbody = "@App:name('" + siddhiAppName + "')\n" +
             "@source(type='http', receiver.url= '" + receiverURL + "', "
             + "topic='symbol', @map(type='xml'))\n" +
