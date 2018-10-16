@@ -56,5 +56,7 @@ spec:
             protocol: "TCP"
           - containerPort: 9893
             protocol: "TCP"
+          - containerPort: 13001
+            protocol: "TCP"
       imagePullSecrets:
        - name: regsecretdas
